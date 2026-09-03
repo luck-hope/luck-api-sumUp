@@ -8,6 +8,7 @@ on:
 jobs:
   build:
     strategy:
+      fail-fast: false
       matrix:
         os: [windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
@@ -32,7 +33,7 @@ jobs:
       - name: Create macOS DMG
         if: matrix.os == 'macos-latest'
         run: |
-          hdiutil create -volname TokenTracker -srcfolder dist/TokenTrackerGateway.app -ov -format UDZO dist/TokenTracker.dmg
+          hdiutil create -volname TokenTrackerGateway-Mac -srcfolder dist/TokenTrackerGateway-Mac.app -ov -format UDZO dist/TokenTrackerGateway-Mac.dmg
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4

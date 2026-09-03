@@ -17,7 +17,7 @@ onefile = not is_mac  # Windows 单文件；macOS 用 --onedir 生成 .app bundl
 cmd = [
     sys.executable, "-m", "PyInstaller",
     "--noconfirm",
-    "--onefile" if onfile else "--onedir",
+    "--onefile" if onefile else "--onedir",
     "--windowed",
     "--name", name,
     "--clean",
