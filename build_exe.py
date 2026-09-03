@@ -40,9 +40,9 @@ subprocess.check_call(cmd)
 out = os.path.join(ROOT, "dist", name)
 if is_mac:
     bundle = out + ".app"
-    print(f"✅ macOS .app bundle → {bundle}")
-    print(f"   打 .dmg: hdiutil create -volname {name} -srcfolder {bundle} -ov -format UDZO dist/{name}.dmg")
+    print(f"macOS .app bundle -> {bundle}")
+    print(f"To create DMG: hdiutil create -volname {name} -srcfolder {bundle} -ov -format UDZO dist/{name}.dmg")
 elif is_win:
-    print(f"✅ Windows exe → {out}.exe")
+    print(f"Windows exe -> {out}.exe")
 else:
-    print(f"⚠️  Linux 未配置图标/icon，exe 位于 {out}")
+    print(f"WARNING: Linux icon not configured, exe at {out}")
