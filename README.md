@@ -9,6 +9,12 @@
 - **多模型定价**：内置 Claude / GPT-4o / DeepSeek 等主流模型定价表
 - **流式解析**：自动解析 SSE 流中的 `usage` 信息，无需完整响应
 
+## 仓库
+
+- **主页**：https://github.com/luck-hope/luck-api-sumUp
+- **构建产物**：https://github.com/luck-hope/luck-api-sumUp/actions
+- **Release**：https://github.com/luck-hope/luck-api-sumUp/releases
+
 ## 系统要求
 
 | 平台 | 依赖 | 说明 |
@@ -20,14 +26,14 @@
 
 ### Windows（推荐）
 
-1. 下载 `TokenTrackerGateway-Win.exe`（[Release](https://github.com/luck-hope/TokenTrackerGateway/releases)）
+1. 下载 `TokenTrackerGateway-Win.exe`（[Release](https://github.com/luck-hope/luck-api-sumUp/releases)）
 2. 双击运行，托盘区出现胶囊窗口
 3. 配置 IDE 的 API Base URL 为 `http://127.0.0.1:8045`
 4. 后续所有请求的 token 统计自动显示在面板中
 
 ### macOS
 
-1. 下载 `TokenTrackerGateway-Mac.app`（[Release](https://github.com/luck-hope/TokenTrackerGateway/releases)）
+1. 下载 `TokenTrackerGateway-Mac.app`（[Release](https://github.com/luck-hope/luck-api-sumUp/releases)）
 2. 右键 → 打开，在弹出的安全提示中选择"仍要打开"
 3. 配置 IDE 的 API Base URL 为 `http://127.0.0.1:8045`
 4. 首次运行可能需要放行防火墙
@@ -78,7 +84,7 @@ hdiutil create -volname TokenTrackerGateway-Mac \
 
 ## GitHub Actions 自动构建
 
-推送代码后 GitHub Actions 自动在 Windows + macOS runner 上构建，产物在 [Actions](https://github.com/luck-hope/TokenTrackerGateway/actions) 页面下载。
+推送代码后 GitHub Actions 自动在 Windows + macOS runner 上构建，产物在 [Actions](https://github.com/luck-hope/luck-api-sumUp/actions) 页面下载。
 
 ## License
 
