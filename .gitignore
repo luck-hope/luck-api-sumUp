@@ -1,0 +1,38 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# PyInstaller build artifacts
+build/
+dist/
+*.spec
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data / logs
+data/
+*.log
+*.db
+
+# Debug temp files
+_dbg_*
+_verify_*
+_build_*
+fix_dist_config*.py
+
+# Assets (not needed for cloning)
+assets/*.ico
